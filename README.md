@@ -5,7 +5,7 @@ Personal portfolio for Izabelle Datayan
 <h2>Technologies Used<h2>
 
 <ul>
-  <li>HTML<li>
-  <li>CSS<li>
-  <li>JavaScript<li>
+  <li><p>HTML<p>
+  <li><p>CSS<p>
+  <li><p>JavaScript<p>
 <ul>
