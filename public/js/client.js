@@ -60,3 +60,10 @@ window.onclick = function(event) {
   }
 }
 
+// let resumeButton = document.getElementById("resumeButton");
+// let resumeLink = document.getElementById("resumeLink");
+
+// resumeButton.addEventListener("click", function(){
+//   resumeLink.click();
+// })
+
