@@ -12,8 +12,7 @@ app.use("/data", express.static("./app/data"))
 
 
 app.get("/", function (req, res) {
-    console.log(process.env);
-    let doc = fs.readFileSync("./app/html/index.html", "utf8");
+    let doc = fs.readFileSync("./index.html", "utf8");
     res.send(doc);
 });
 
@@ -21,6 +20,13 @@ app.get("/", function (req, res) {
 app.use(function (req, res, next) {
     res.status(404).send("<html><head><title>Page not found!</title></head><body><p>Nothing here.</p></body></html>");
 });
+
+app.get("/izabelle-resume", function (req, res) {
+    let resume = fs.readFile("./izabelle_resume.pdf");
+    res.contentType("application/pdf");
+    res.send(resume);
+});
+
 
 
 app.listen(8000, function () {
