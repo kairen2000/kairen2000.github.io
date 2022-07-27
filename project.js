@@ -27,8 +27,8 @@ app.get("/izabelle-resume", function (req, res) {
     res.send(resume);
 });
 
+let port = process.env.PORT || 5000;
 
-
-app.listen(8000, function () {
+app.listen(port, function () {
     console.log("Server started on port 8000");
 });

@@ -1,0 +1,19 @@
+{
+  "name": "personal_portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio for Izabelle Datayan",
+  "main": "project.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kairen2000/personal_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kairen2000/personal_portfolio/issues"
+  },
+  "homepage": "https://github.com/kairen2000/personal_portfolio#readme"
+}
