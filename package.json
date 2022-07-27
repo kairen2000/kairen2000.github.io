@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kairen2000/personal_portfolio/issues"
   },
-  "homepage": "https://github.com/kairen2000/personal_portfolio#readme"
+  "homepage": "https://github.com/kairen2000/personal_portfolio#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
