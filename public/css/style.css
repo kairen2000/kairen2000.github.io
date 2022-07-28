@@ -622,7 +622,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 100% 90% 110% 110% 55% 10%;
+    grid-template-rows: auto 100% 100% 110% 110% 55% 10%;
   }
 
   #aboutMePic {
@@ -810,7 +810,7 @@ footer {
 
 /* media query for small screens --------------------------------------------------------------*/
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) and (min-width: 751px) {
 
   #hamburgerNav {
     cursor: pointer;
@@ -844,7 +844,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 100% 120% 180% 105% 55% 10%;
+    grid-template-rows: auto 100% 130% 180% 140% 70% 10%;
   }
 
   #maintext {
@@ -862,7 +862,7 @@ footer {
     width: 100%;
     height: 92%;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 40% 30%;
+    grid-template-rows: 10% 35% 30%;
   }
 
   #aboutMeTitle {
@@ -873,24 +873,24 @@ footer {
 
 
   #aboutMePic {
-    height: 100%;
+    height: 300px;
     width: auto;
     grid-column: 2 / span 2;
     grid-row: 2;
     align-self: center;
     justify-self: center;
     padding-left: 0;
-    margin-top: 150px;
+    margin-top: 170px;
   }
 
   #aboutMeDesc {
-    margin-top: 200px;
     grid-column: 1 / span 4;
     grid-row: 3;
     align-self: center;
     justify-self: center;
     padding-left: 8%;
     padding-right: 8%;
+    padding-top: 300px;
   }
 
   #projects {
@@ -1023,12 +1023,12 @@ footer {
     width: 100%;
     height: 75vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 15% 40% 15% 25%;
+    grid-template-rows: 15% 15% 15% 15% 30% 15% 15% 15% 30%;
     margin-top: 5%;
     padding-top: 70px;
     margin-bottom: 4%;
   }
-
+  
   #skillsTitle {
     grid-column: 1 / span 4;
     grid-row: 1;
@@ -1036,114 +1036,201 @@ footer {
     justify-self: center;
     margin-bottom: 5%;
   }
-
+  
   #languagesPic {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
     grid-row: 2;
     align-self: center;
     justify-self: center;
     margin-right: 240px;
     text-align: center;
   }
-
+  
   #languagesTitle {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
     grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-right: 90px;
+  }
+  
+  #languagesList {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    align-self: start;
+    justify-self: center;
+    margin-right: 200px;
+  }
+  
+  #webDevPic {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+    margin-right: 240px;
+    text-align: center;
+  }
+  
+  #webDevTitle {
+    grid-column: 1 / span 4;
+    grid-row: 4;
     align-self: center;
     justify-self: center;
     text-align: center;
     margin-right: 100px;
   }
-
-  #languagesList {
-    grid-column: 1 / span 2;
-    grid-row: 3;
-    align-self: start;
-    justify-self: center;
-    margin-right: 200px;
-  }
-
-  #webDevPic {
-    grid-column: 3 / span 2;
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
-    margin-right: 140px;
-    text-align: center;
-  }
-
-  #webDevTitle {
-    grid-column: 3 / span 2;
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-  }
-
+  
   #webDevList {
-    grid-column: 3 / span 2;
-    grid-row: 3;
+    grid-column: 1 / span 4;
+    grid-row: 5;
     align-self: start;
     justify-self: center;
-  }
-
-  #databasePic {
-    grid-column: 1 / span 2;
-    grid-row: 4;
-    align-self: center;
-    justify-self: center;
-    margin-right: 260px;
-    text-align: center;
-  }
-
-  #databaseTitle {
-    grid-column: 1 / span 2;
-    grid-row: 4;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
     margin-right: 140px;
   }
-
+  
+  #databasePic {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    align-self: center;
+    justify-self: center;
+    margin-right: 265px;
+    text-align: center;
+  }
+  
+  #databaseTitle {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-right: 120px;
+  }
+  
   #databaseList {
-    grid-column: 1 / span 2;
-    grid-row: 5;
+    grid-column: 1 / span 4;
+    grid-row: 7;
     align-self: start;
     justify-self: center;
-    margin-right: 200px;
+    margin-right: 220px;
   }
-
+  
   #versionControlPic {
-    grid-column: 3 / span 2;
-    grid-row: 4;
+    grid-column: 1 / span 4;
+    grid-row: 8;
     align-self: center;
     justify-self: center;
-    margin-right: 110px;
+    margin-right: 220px;
     text-align: center;
   }
-
+  
   #versionControlTitle {
-    grid-column: 3 / span 2;
-    grid-row: 4;
+    grid-column: 1 / span 5;
+    grid-row: 8;
     align-self: center;
     justify-self: center;
     text-align: center;
-    margin-left: 170px;
+    margin-left: 70px;
   }
-
+  
   #versionControlList {
-    grid-column: 3 / span 2;
-    grid-row: 5;
+    grid-column: 1 / span 4;
+    grid-row: 9;
     align-self: start;
     justify-self: center;
+    margin-right: 100px;
   }
+  
+    #contactMe{
+      grid-column: 1 / span 4;
+      grid-row: 6;
+      display: grid;
+      width: 100%;
+      height: 60vh;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 15% 25% 10% 15% 30%;
+    }
+    
+    #contactMeTitle{
+      grid-column: 1 / span 4;
+      grid-row: 1;
+    }
+    
+    #getInTouchTitle{
+      grid-column: 1 / span 4;
+      grid-row: 2;
+      align-self: center;
+      justify-self: center;
+    }
+    
+    #linksTitle{
+      grid-column: 1 / span 4;
+      grid-row: 4;
+      align-self: start;
+      justify-self: center;
+    }
+    
+    #emailPic{
+      grid-column: 1 / span 4;
+      grid-row: 3;
+      align-self: center;
+      justify-self: center;
+      margin-right: 210px;
+    }
+    
+    #emailP{
+      grid-column: 1 / span 4;
+      grid-row: 3;
+      align-self: center;
+      justify-self: center;
+      margin-left: 10px;
+    }
+    
+    #linkedinPic{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: center;
+      justify-self: center;
+      margin-right: 115px;
+    }
+    
+    #linkedinP{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: center;
+      justify-self: center;
+    }
+    
+    #githubPic{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: end;
+      justify-self: center;
+      margin-right: 115px;
+    }
+    
+    #githubP{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: end;
+      justify-self: center;
+      margin-right: 15px;
+    }
 
 
 }
 
 @media only screen and (max-width: 750px) {
 
-  #hambugerNav {
+  #hamburgerNav {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 90%;
+  }
+
+  #hamburgerNav {
     display: block;
   }
 
@@ -1158,7 +1245,6 @@ footer {
     display: none;
   }
 
-
   p {
     font-size: 15px;
   }
@@ -1168,7 +1254,15 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 100% 115% 190% 140% 80% 10%;
+    grid-template-rows: auto 100% 125% 180% 140% 70% 10%;
+  }
+
+  #maintext {
+    font-size: 25px;
+  }
+
+  #name {
+    font-size: 65px;
   }
 
   #aboutMe {
@@ -1179,12 +1273,24 @@ footer {
     height: 92%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 10% 40% 30%;
-    padding-top: 4%;
   }
 
   #aboutMeTitle {
     grid-column: 1 / span 4;
     grid-row: 1;
+    padding-top: 90px;
+  }
+
+
+  #aboutMePic {
+    height: 300px;
+    width: auto;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    padding-left: 0;
+    margin-top: 150px;
   }
 
   #aboutMeDesc {
@@ -1192,28 +1298,132 @@ footer {
     grid-row: 3;
     align-self: center;
     justify-self: center;
-  }
-
-  #maintext {
-    font-size: 20px;
-  }
-
-  #name {
-    font-size: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 300px;
   }
 
   #projects {
-    padding-top: 8%;
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 10% 40% 12% 17% 15% 10% 40% 10% 15% 10%;
+    padding-top: 0;
   }
 
-  #iAssistPic {
-    height: 80%;
+  .projectsSubTitle {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .projectPic {
+    height: 90%;
     width: auto;
+    align-self: center end;
+    justify-self: center;
+  }
+
+  #projectsTitle {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  #projectsDesc {
+    justify-self: center;
+    align-self: center end;
+  }
+
+  #dropTitle {
+    grid-column: 1 / span 4;
+    grid-row: 2;
   }
 
   #dropPic {
-    height: 80%;
-    width: auto;
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
+
+  #dropDesc {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+  }
+
+  #dropDemo {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    margin-top: 15%;
+    margin-right: 4%;
+    align-self: center;
+    justify-self: end;
+  }
+
+  #dropCode {
+    grid-column: 3 / span 2;
+    grid-row: 5;
+    margin-top: 15%;
+    margin-left: 4%;
+    align-self: center;
+    justify-self: start;
+  }
+
+
+  #dropSkills {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 5%;
+  }
+
+  #iAssistTitle {
+    grid-column: 1 / span 4;
+    grid-row: 7;
+  }
+
+  #iAssistPic {
+    grid-column: 1 / span 4;
+    grid-row: 8;
+  }
+
+  #iAssistDesc {
+    grid-column: 1 / span 4;
+    grid-row: 9;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+  }
+
+  #iAssistDemo {
+    grid-column: 1 / span 2;
+    grid-row: 10;
+    margin-top: 15%;
+    margin-right: 4%;
+    align-self: center;
+    justify-self: end;
+  }
+
+  #iAssistCode {
+    grid-column: 3 / span 2;
+    grid-row: 10;
+    margin-top: 15%;
+    margin-left: 4%;
+    align-self: center;
+    justify-self: start;
+  }
+
+
+  #iAssistSkills {
+    grid-column: 1 / span 4;
+    grid-row: 11;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 5%;
   }
 
   #skills {
@@ -1228,7 +1438,7 @@ footer {
     padding-top: 70px;
     margin-bottom: 4%;
   }
-
+  
   #skillsTitle {
     grid-column: 1 / span 4;
     grid-row: 1;
@@ -1236,7 +1446,7 @@ footer {
     justify-self: center;
     margin-bottom: 5%;
   }
-
+  
   #languagesPic {
     grid-column: 1 / span 4;
     grid-row: 2;
@@ -1245,7 +1455,7 @@ footer {
     margin-right: 240px;
     text-align: center;
   }
-
+  
   #languagesTitle {
     grid-column: 1 / span 4;
     grid-row: 2;
@@ -1254,7 +1464,7 @@ footer {
     text-align: center;
     margin-right: 90px;
   }
-
+  
   #languagesList {
     grid-column: 1 / span 4;
     grid-row: 3;
@@ -1262,7 +1472,7 @@ footer {
     justify-self: center;
     margin-right: 200px;
   }
-
+  
   #webDevPic {
     grid-column: 1 / span 4;
     grid-row: 4;
@@ -1271,7 +1481,7 @@ footer {
     margin-right: 240px;
     text-align: center;
   }
-
+  
   #webDevTitle {
     grid-column: 1 / span 4;
     grid-row: 4;
@@ -1280,7 +1490,7 @@ footer {
     text-align: center;
     margin-right: 100px;
   }
-
+  
   #webDevList {
     grid-column: 1 / span 4;
     grid-row: 5;
@@ -1288,7 +1498,7 @@ footer {
     justify-self: center;
     margin-right: 140px;
   }
-
+  
   #databasePic {
     grid-column: 1 / span 4;
     grid-row: 6;
@@ -1297,7 +1507,7 @@ footer {
     margin-right: 265px;
     text-align: center;
   }
-
+  
   #databaseTitle {
     grid-column: 1 / span 4;
     grid-row: 6;
@@ -1306,7 +1516,7 @@ footer {
     text-align: center;
     margin-right: 120px;
   }
-
+  
   #databaseList {
     grid-column: 1 / span 4;
     grid-row: 7;
@@ -1314,7 +1524,7 @@ footer {
     justify-self: center;
     margin-right: 220px;
   }
-
+  
   #versionControlPic {
     grid-column: 1 / span 4;
     grid-row: 8;
@@ -1323,7 +1533,7 @@ footer {
     margin-right: 220px;
     text-align: center;
   }
-
+  
   #versionControlTitle {
     grid-column: 1 / span 5;
     grid-row: 8;
@@ -1332,7 +1542,7 @@ footer {
     text-align: center;
     margin-left: 70px;
   }
-
+  
   #versionControlList {
     grid-column: 1 / span 4;
     grid-row: 9;
@@ -1340,85 +1550,86 @@ footer {
     justify-self: center;
     margin-right: 100px;
   }
+  
+    #contactMe{
+      grid-column: 1 / span 4;
+      grid-row: 6;
+      display: grid;
+      width: 100%;
+      height: 60vh;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 25% 15% 15% 10% 30%;
+    }
+    
+    #contactMeTitle{
+      grid-column: 1 / span 4;
+      grid-row: 1;
+    }
+    
+    #getInTouchTitle{
+      grid-column: 1 / span 4;
+      grid-row: 2;
+      align-self: center;
+      justify-self: center;
+    }
+    
+    #linksTitle{
+      grid-column: 1 / span 4;
+      grid-row: 4;
+      align-self: start;
+      justify-self: center;
+    }
+    
+    #emailPic{
+      grid-column: 1 / span 4;
+      grid-row: 3;
+      align-self: center;
+      justify-self: center;
+      margin-right: 210px;
+    }
+    
+    #emailP{
+      grid-column: 1 / span 4;
+      grid-row: 3;
+      align-self: center;
+      justify-self: center;
+      margin-left: 10px;
+    }
+    
+    #linkedinPic{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: center;
+      justify-self: center;
+      margin-right: 115px;
+    }
+    
+    #linkedinP{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: center;
+      justify-self: center;
+    }
+    
+    #githubPic{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: end;
+      justify-self: center;
+      margin-right: 115px;
+    }
+    
+    #githubP{
+      grid-column: 1 / span 4;
+      grid-row: 5;
+      align-self: end;
+      justify-self: center;
+      margin-right: 15px;
+    }
 
-  #contactMe {
-    grid-column: 1 / span 4;
-    grid-row: 6;
-    display: grid;
-    width: 100%;
-    height: 60vh;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 25% 15% 15% 30%;
-  }
-
-  #contactMeTitle {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-  }
-
-  #getInTouchTitle {
-    grid-column: 1 / span 4;
-    grid-row: 2;
-    align-self: start;
-    justify-self: center;
-  }
-
-  #linksTitle {
-    grid-column: 1 / span 4;
-    grid-row: 4;
-    align-self: start;
-    justify-self: center;
-  }
-
-  #emailPic {
-    grid-column: 1 / span 4;
-    grid-row: 3;
-    align-self: center;
-    justify-self: center;
-    margin-right: 210px;
-  }
-
-  #emailP {
-    grid-column: 1 / span 4;
-    grid-row: 3;
-    align-self: center;
-    justify-self: center;
-    margin-left: 10px;
-  }
-
-  #linkedinPic {
-    grid-column: 1 / span 4;
-    grid-row: 5;
-    align-self: center;
-    justify-self: center;
-    margin-right: 115px;
-  }
-
-  #linkedinP {
-    grid-column: 1 / span 4;
-    grid-row: 5;
-    align-self: center;
-    justify-self: center;
-  }
-
-  #githubPic {
-    grid-column: 1 / span 4;
-    grid-row: 5;
-    align-self: end;
-    justify-self: center;
-    margin-right: 115px;
-  }
-
-  #githubP {
-    grid-column: 1 / span 4;
-    grid-row: 5;
-    align-self: end;
-    justify-self: center;
-    margin-right: 15px;
-  }
 
 }
-
+/* 
 @media only screen and (max-width: 500px) {
 
   #container {
@@ -1445,4 +1656,4 @@ footer {
     font-size: 55px;
   }
 
-}
+} */
