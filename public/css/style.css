@@ -1629,7 +1629,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 640px) and (min-width: 481px), screen and (max-device-width: 1000px) {
 
   #hamburgerNav {
     cursor: pointer;
@@ -1663,7 +1663,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 100% 75% 140% 80% 40% 7%;
+    grid-template-rows: auto 100% 120% 200% 120% 70% 10%;
   }
 
   #maintext {
@@ -1719,7 +1719,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 12% 7% 30% 10% 10% 7% 10% 30% 10% 7% 5%;
+    grid-template-rows: 15% 10% 40% 15% 15% 10% 10% 40% 15% 15% 10%;
     padding-top: 0;
   }
 
@@ -1843,7 +1843,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 12% 7% 7% 7% 14% 7% 7% 7% 14%;
+    grid-template-rows: 15% 10% 10% 10% 20% 10% 10% 10% 20%;
     margin-top: 0;
     padding-top: 0;
   }
@@ -1966,7 +1966,416 @@ footer {
     width: 100%;
     height: 100%;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 15% 15% 15% 27%;
+    grid-template-rows: 15% 15% 15% 15% 25%;
+  }
+
+  #contactMeTitle {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  #getInTouchTitle {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #linksTitle {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    align-self: start;
+    justify-self: center;
+  }
+
+  #emailPic {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    margin-right: 210px;
+  }
+
+  #emailP {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
+  }
+
+  #linkedinPic {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    align-self: center;
+    justify-self: center;
+    margin-right: 115px;
+  }
+
+  #linkedinP {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #githubPic {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    align-self: end;
+    justify-self: center;
+    margin-right: 115px;
+  }
+
+  #githubP {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    align-self: end;
+    justify-self: center;
+    margin-right: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 481px) {
+
+  #hamburgerNav {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 90%;
+  }
+
+  #hamburgerNav {
+    display: block;
+  }
+
+  #hamContainer {
+    margin-top: 17px;
+    margin-left: 90%;
+    display: block;
+    cursor: pointer;
+  }
+
+  #normNav {
+    display: none;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto 100% 100% 170% 110% 50% 7%;
+  }
+
+  #maintext {
+    font-size: 25px;
+  }
+
+  #name {
+    font-size: 65px;
+  }
+
+  #aboutMe {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 40% 30%;
+  }
+
+  #aboutMeTitle {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    padding-top: 90px;
+  }
+
+
+  #aboutMePic {
+    height: 300px;
+    width: auto;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    padding-left: 0;
+    margin-top: 150px;
+  }
+
+  #aboutMeDesc {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 300px;
+  }
+
+  #projects {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 12% 7% 35% 12% 15% 7% 10% 35% 12% 15% 5%;
+    padding-top: 0;
+  }
+
+  .projectsSubTitle {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .projectPic {
+    height: 70%;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #projectsTitle {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    margin-top: 50px;
+  }
+
+  #projectsDesc {
+    justify-self: center;
+    align-self: center end;
+  }
+
+  #dropTitle {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+
+  #dropPic {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
+
+  #dropDesc {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+  }
+
+  #dropDemo {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    margin-top: 0%;
+    margin-right: 4%;
+    align-self: center;
+    justify-self: end;
+  }
+
+  #dropCode {
+    grid-column: 3 / span 2;
+    grid-row: 5;
+    margin-top: 0%;
+    margin-left: 4%;
+    align-self: center;
+    justify-self: start;
+  }
+
+
+  #dropSkills {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 5%;
+  }
+
+  #iAssistTitle {
+    grid-column: 1 / span 4;
+    grid-row: 7;
+  }
+
+  #iAssistPic {
+    grid-column: 1 / span 4;
+    grid-row: 8;
+  }
+
+  #iAssistDesc {
+    grid-column: 1 / span 4;
+    grid-row: 9;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+  }
+
+  #iAssistDemo {
+    grid-column: 1 / span 2;
+    grid-row: 10;
+    margin-top: 0%;
+    margin-right: 4%;
+    align-self: center;
+    justify-self: end;
+  }
+
+  #iAssistCode {
+    grid-column: 3 / span 2;
+    grid-row: 10;
+    margin-top: 0%;
+    margin-left: 4%;
+    align-self: center;
+    justify-self: start;
+  }
+
+
+  #iAssistSkills {
+    grid-column: 1 / span 4;
+    grid-row: 11;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 5%;
+  }
+
+  #skills {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 10% 10% 10% 17% 10% 10% 10% 17%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #skillsTitle {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #languagesPic {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    margin-right: 240px;
+    text-align: center;
+  }
+
+  #languagesTitle {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-right: 90px;
+  }
+
+  #languagesList {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    align-self: start;
+    justify-self: center;
+    margin-right: 200px;
+  }
+
+  #webDevPic {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+    margin-right: 240px;
+    text-align: center;
+  }
+
+  #webDevTitle {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-right: 100px;
+  }
+
+  #webDevList {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    align-self: start;
+    justify-self: center;
+    margin-right: 140px;
+  }
+
+  #databasePic {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    align-self: center;
+    justify-self: center;
+    margin-right: 265px;
+    text-align: center;
+  }
+
+  #databaseTitle {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-right: 120px;
+  }
+
+  #databaseList {
+    grid-column: 1 / span 4;
+    grid-row: 7;
+    align-self: start;
+    justify-self: center;
+    margin-right: 220px;
+  }
+
+  #versionControlPic {
+    grid-column: 1 / span 4;
+    grid-row: 8;
+    align-self: center;
+    justify-self: center;
+    margin-right: 220px;
+    text-align: center;
+  }
+
+  #versionControlTitle {
+    grid-column: 1 / span 5;
+    grid-row: 8;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-left: 70px;
+  }
+
+  #versionControlList {
+    grid-column: 1 / span 4;
+    grid-row: 9;
+    align-self: start;
+    justify-self: center;
+    margin-right: 100px;
+  }
+
+  #contactMe {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 15% 15% 12% 22%;
   }
 
   #contactMeTitle {
