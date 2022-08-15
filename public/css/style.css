@@ -810,7 +810,7 @@ footer {
 
 /* media query for small screens --------------------------------------------------------------*/
 
-@media only screen and (max-width: 950px) and (min-width: 751px) {
+@media only screen and (max-width: 950px) and (min-width: 641px) {
 
   #hamburgerNav {
     cursor: pointer;
@@ -1220,7 +1220,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 750px) and (min-width: 501px) {
+@media only screen and (max-width: 640px) and (min-width: 481px) {
 
   #hamburgerNav {
     cursor: pointer;
@@ -1254,7 +1254,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 100% 125% 180% 140% 70% 10%;
+    grid-template-rows: auto 100% 75% 140% 80% 40% 7%;
   }
 
   #maintext {
@@ -1270,7 +1270,7 @@ footer {
     grid-row: 3;
     display: grid;
     width: 100%;
-    height: 92%;
+    height: 100%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 10% 40% 30%;
   }
@@ -1310,7 +1310,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 10% 40% 12% 17% 15% 10% 40% 10% 15% 10%;
+    grid-template-rows: 12% 7% 30% 10% 10% 7% 10% 30% 10% 7% 5%;
     padding-top: 0;
   }
 
@@ -1320,15 +1320,16 @@ footer {
   }
 
   .projectPic {
-    height: 90%;
+    height: 70%;
     width: auto;
-    align-self: center end;
+    align-self: center;
     justify-self: center;
   }
 
   #projectsTitle {
     grid-column: 2 / span 2;
     grid-row: 1;
+    margin-top: 50px;
   }
 
   #projectsDesc {
@@ -1357,7 +1358,7 @@ footer {
   #dropDemo {
     grid-column: 1 / span 2;
     grid-row: 5;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-right: 4%;
     align-self: center;
     justify-self: end;
@@ -1366,7 +1367,7 @@ footer {
   #dropCode {
     grid-column: 3 / span 2;
     grid-row: 5;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-left: 4%;
     align-self: center;
     justify-self: start;
@@ -1402,7 +1403,7 @@ footer {
   #iAssistDemo {
     grid-column: 1 / span 2;
     grid-row: 10;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-right: 4%;
     align-self: center;
     justify-self: end;
@@ -1411,7 +1412,7 @@ footer {
   #iAssistCode {
     grid-column: 3 / span 2;
     grid-row: 10;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-left: 4%;
     align-self: center;
     justify-self: start;
@@ -1431,12 +1432,11 @@ footer {
     grid-row: 5;
     display: grid;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 15% 15% 15% 30% 15% 15% 15% 30%;
-    margin-top: 5%;
-    padding-top: 70px;
-    margin-bottom: 4%;
+    grid-template-rows: 12% 7% 7% 7% 14% 7% 7% 7% 14%;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   #skillsTitle {
@@ -1444,7 +1444,6 @@ footer {
     grid-row: 1;
     align-self: center;
     justify-self: center;
-    margin-bottom: 5%;
   }
 
   #languagesPic {
@@ -1556,9 +1555,9 @@ footer {
     grid-row: 6;
     display: grid;
     width: 100%;
-    height: 60vh;
+    height: 100%;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 15% 15% 10% 30%;
+    grid-template-rows: 15% 15% 15% 15% 27%;
   }
 
   #contactMeTitle {
@@ -1630,7 +1629,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 481px) {
 
   #hamburgerNav {
     cursor: pointer;
@@ -1664,7 +1663,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 100% 90% 135% 83% 50% 10%;
+    grid-template-rows: auto 100% 75% 140% 80% 40% 7%;
   }
 
   #maintext {
@@ -1680,7 +1679,7 @@ footer {
     grid-row: 3;
     display: grid;
     width: 100%;
-    height: 92%;
+    height: 100%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 10% 40% 30%;
   }
@@ -1720,7 +1719,7 @@ footer {
     width: 100%;
     height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 10% 30% 7% 10% 10% 10% 30% 7% 10% 10%;
+    grid-template-rows: 12% 7% 30% 10% 10% 7% 10% 30% 10% 7% 5%;
     padding-top: 0;
   }
 
@@ -1732,13 +1731,14 @@ footer {
   .projectPic {
     height: 70%;
     width: auto;
-    align-self: center end;
+    align-self: center;
     justify-self: center;
   }
 
   #projectsTitle {
     grid-column: 2 / span 2;
     grid-row: 1;
+    margin-top: 50px;
   }
 
   #projectsDesc {
@@ -1761,12 +1761,13 @@ footer {
     grid-row: 4;
     margin-left: 12%;
     margin-right: 12%;
+    margin-top: 1%;
   }
 
   #dropDemo {
     grid-column: 1 / span 2;
     grid-row: 5;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-right: 4%;
     align-self: center;
     justify-self: end;
@@ -1775,7 +1776,7 @@ footer {
   #dropCode {
     grid-column: 3 / span 2;
     grid-row: 5;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-left: 4%;
     align-self: center;
     justify-self: start;
@@ -1805,12 +1806,13 @@ footer {
     grid-row: 9;
     margin-left: 12%;
     margin-right: 12%;
+    margin-top: 1%;
   }
 
   #iAssistDemo {
     grid-column: 1 / span 2;
     grid-row: 10;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-right: 4%;
     align-self: center;
     justify-self: end;
@@ -1819,7 +1821,7 @@ footer {
   #iAssistCode {
     grid-column: 3 / span 2;
     grid-row: 10;
-    margin-top: 15%;
+    margin-top: 0%;
     margin-left: 4%;
     align-self: center;
     justify-self: start;
@@ -1839,12 +1841,11 @@ footer {
     grid-row: 5;
     display: grid;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 10% 7% 10% 15% 10% 7% 10% 15%;
-    margin-top: 5%;
-    padding-top: 70px;
-    margin-bottom: 4%;
+    grid-template-rows: 12% 7% 7% 7% 14% 7% 7% 7% 14%;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   #skillsTitle {
@@ -1852,7 +1853,6 @@ footer {
     grid-row: 1;
     align-self: center;
     justify-self: center;
-    margin-bottom: 5%;
   }
 
   #languagesPic {
@@ -1964,9 +1964,9 @@ footer {
     grid-row: 6;
     display: grid;
     width: 100%;
-    height: 60vh;
+    height: 100%;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 15% 10% 10% 20%;
+    grid-template-rows: 15% 15% 15% 15% 27%;
   }
 
   #contactMeTitle {
@@ -2034,6 +2034,4 @@ footer {
     justify-self: center;
     margin-right: 15px;
   }
-
-
 }
