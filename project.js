@@ -1,5 +1,4 @@
 const express = require("express");
-const session = require("express-session");
 const app = express();
 app.use(express.json());
 const fs = require("fs");
@@ -11,25 +10,8 @@ app.use("/img", express.static("./public/img"));
 app.use("/js", express.static("./public/js"));
 app.use("/data", express.static("./app/data"))
 
-//session connection
-app.use(
-    session({
-      secret: "extra text that no one will guess",
-      name: "wazaSessionID",
-      resave: false,
-      saveUninitialized: true,
-    })
-  );
-  
-  app.use(express.json());
-  app.use(
-    express.urlencoded({
-      extended: true,
-    })
-  );
-
 app.get("/", function (req, res) {
-    let doc = fs.readFileSync("index.html", "utf8");
+    let doc = fs.readFileSync("./index.html", "utf8");
     res.send(doc);
 });
 
