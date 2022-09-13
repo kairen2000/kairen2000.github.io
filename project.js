@@ -29,7 +29,7 @@ app.use(
   );
 
 app.get("/", function (req, res) {
-    let doc = fs.readFileSync("./index.html", "utf8");
+    let doc = fs.readFileSync("index.html", "utf8");
     res.set("Server", "Wazubi Engine");
     res.set("X-Powered-By", "Wazubi");
     res.send(doc);
